@@ -16,6 +16,10 @@ We use groups the user's subscribed to. Currently we're randomly selecting 5 gro
 6. TF-IDF vectorization
 7. Truncated SVD (to reduce dimentionality)
 
+notebook: [preprocessing.ipynb](./preprocessing/preprocessing.ipynb)
+
+.py module: [preprocessing.py](./preprocessing/preprocessing.py)
+
 Visualization of text after preprocessing:
 
 ![image failed to load...](images/selected3d.png)
