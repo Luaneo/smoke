@@ -11,50 +11,75 @@ datasource db {
   shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
+model User {
+  id Int @id
+
+  // registration info
+  smokeType  SmokeType
+  cigs       Cigs?
+  pods       Pods?
+  disposable Disposable?
+  reason     Reason
+
+  // personal info
+  age Int?
+  sex Sex?
+
+  // misc settings
+  goal          String?
+  pushesEnabled Boolean @default(false)
+
+  calendar CalendarDay[]
+  lives    Int           @default(5)
+
+  groups  Group[]
+  rewards Reward[]
+}
+
+enum Sex {
+  MALE
+  FEMALE
+  OTHER
+}
+
 enum SmokeType {
   CIGS
   PODS
   DISPOSABLE
 }
 
-model User {
-  id         Int         @id
-  lives      Int         @default(5)
-  smokeType  SmokeType
-  cigs       Cigs?
-  pods       Pods?
-  disposable Disposable?
-  smokeDates SmokeDate[]
-  smokedFor  Int
-
-  // personal info
-  age Int?
-  sex Sex?
+enum Reason {
+  HEALTH
+  EMOTIONS
+  WILLPOWER
+  MONEY
+  DEFAULT
 }
 
-enum Sex {
-  MALE
-  FEMALE
+enum CalendarDayType {
+  SMOKED
+  WISHED
+  RESISTED
 }
 
-model SmokeDate {
-  id     Int      @id
-  date   DateTime @default(now())
+model CalendarDay {
+  date   DateTime
   user   User     @relation(fields: [userId], references: [id])
   userId Int
+
+  type CalendarDayType
+
+  @@id([date, userId])
 }
 
 model Cigs {
-  packPrice  Int
   cigsPerDay Int
   user       User @relation(fields: [userId], references: [id])
   userId     Int  @unique
 }
 
 model Pods {
-  juicePrice         Int
   juicePerMonth      Int
-  vaporizerPrice     Int
   vaporizersPerMonth Int
   user               User @relation(fields: [userId], references: [id])
   userId             Int  @unique
@@ -65,4 +90,25 @@ model Disposable {
   disposablesPerMonth Int
   user                User @relation(fields: [userId], references: [id])
   userId              Int  @unique
+}
+
+model Group {
+  id     Int
+  user   User @relation(fields: [userId], references: [id])
+  userId Int
+
+  @@id([id, userId])
+}
+
+enum RewardType {
+  FOO
+  BAR
+}
+
+model Reward {
+  reward RewardType
+  user   User       @relation(fields: [userId], references: [id])
+  userId Int
+
+  @@id([reward, userId])
 }
