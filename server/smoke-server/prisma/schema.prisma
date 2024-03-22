@@ -26,7 +26,6 @@ model User {
   sex Sex?
 
   // misc settings
-  goal          String?
   pushesEnabled Boolean @default(false)
 
   calendar CalendarDay[]
