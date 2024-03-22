@@ -13,9 +13,8 @@ export const QCigs: React.FC<QuestionProps> = ({ data, setData, setPage }) => {
       <Slider
         value={cigs}
         onChange={setCigs}
-        max={6}
+        max={30}
         min={0}
-        step={0.5}
         style={{
           "--vkui--color_background_accent": "#E52E6A",
           "--vkui_internal--outline": "2px solid #E52E6A",

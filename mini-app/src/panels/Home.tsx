@@ -13,9 +13,17 @@ export const Home: React.FC<NavIdProps> = ({ id }) => {
             position: "absolute",
             top: "0px",
             left: "-38px",
+            zIndex: 5,
           }}
         />
       </Div>
+      <Div
+        style={{
+          position: "relative",
+          zIndex: 10,
+          margin: "auto",
+        }}
+      ></Div>
     </Panel>
   );
 };

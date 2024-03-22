@@ -71,6 +71,7 @@ export const Registration: React.FC<
         />
         <Div
           style={{
+            position: "relative",
             zIndex: 10,
           }}
         >

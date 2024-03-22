@@ -36,7 +36,12 @@ export const App = () => {
   return (
     <SplitLayout popout={popout}>
       <SplitCol>
-        <View activePanel={activePanel}>
+        <View
+          activePanel={activePanel}
+          style={{
+            overflow: "hidden",
+          }}
+        >
           <Welcome id="welcome" />
           <Registration id="registration" setPanel={setPanel} />
           <Home id="home" />
