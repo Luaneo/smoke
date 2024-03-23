@@ -64,7 +64,7 @@ export const Registration: React.FC<
         <BackgroundWaves
           style={{
             position: "absolute",
-            top: "0px",
+            top: "20px",
             left: "-38px",
             zIndex: 5,
           }}

@@ -60,6 +60,8 @@ export const QReason: React.FC<QuestionProps> = ({
       </Checkbox>
 
       <Button
+        className="continue"
+        after={<Icon12ChevronRight color="#2BB4D6" />}
         onClick={() => {
           setData({
             ...data,
@@ -74,7 +76,7 @@ export const QReason: React.FC<QuestionProps> = ({
           setPage("end");
         }}
       >
-        Продолжить <Icon12ChevronRight />
+        <Text className="continue__text">Продолжить</Text>
       </Button>
     </Div>
   );

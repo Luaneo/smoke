@@ -14,6 +14,7 @@ export const QSmokeType: React.FC<QuestionProps> = ({
     <Div className="center">
       <Text className="q-text">Что ты куришь?</Text>
       <Radio
+        className="option"
         checked={smokeType === "CIGS"}
         onChange={() => {
           setType(smokeType === "CIGS" ? null : "CIGS");
@@ -22,6 +23,7 @@ export const QSmokeType: React.FC<QuestionProps> = ({
         обычные сигареты
       </Radio>
       <Radio
+        className="option"
         checked={smokeType === "ECIGS"}
         onChange={() => {
           setType(smokeType === "ECIGS" ? null : "ECIGS");
@@ -30,6 +32,7 @@ export const QSmokeType: React.FC<QuestionProps> = ({
         электронные сигареты
       </Radio>
       <Radio
+        className="option"
         checked={smokeType === "NOTHING"}
         onChange={() => {
           setType(smokeType === "NOTHING" ? null : "NOTHING");
@@ -37,24 +40,28 @@ export const QSmokeType: React.FC<QuestionProps> = ({
       >
         просто так зашел
       </Radio>
-      <Button
-        onClick={() => {
-          switch (smokeType) {
-            case "CIGS":
-              setData({ ...data, smokeType: smokeType });
-              setPage("cigs");
-              break;
-            case "ECIGS":
-              setPage("smoketype-exact");
-              break;
-            case "NOTHING":
-              setPage("kitten");
-              break;
-          }
-        }}
-      >
-        Продолжить <Icon12ChevronRight />
-      </Button>
+      <Div>
+        <Button
+          className="continue"
+          after={<Icon12ChevronRight color="#2BB4D6" />}
+          onClick={() => {
+            switch (smokeType) {
+              case "CIGS":
+                setData({ ...data, smokeType: smokeType });
+                setPage("cigs");
+                break;
+              case "ECIGS":
+                setPage("smoketype-exact");
+                break;
+              case "NOTHING":
+                setPage("kitten");
+                break;
+            }
+          }}
+        >
+          <Text className="continue__text">Продолжить</Text>
+        </Button>
+      </Div>
     </Div>
   );
 };

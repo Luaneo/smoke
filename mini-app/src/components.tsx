@@ -1,3 +1,4 @@
+import { Text } from "@vkontakte/vkui";
 import React from "react";
 
 export const BigLogo = () => {
@@ -228,6 +229,7 @@ export const Kitten = () => {
           />
         </defs>
       </svg>
+      <Text>Молодец! Не вздумай начинать</Text>
     </div>
   );
 };

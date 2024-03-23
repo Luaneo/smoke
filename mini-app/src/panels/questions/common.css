@@ -1,4 +1,58 @@
+:root {
+  --my-blue: #2bb4d6;
+  --my-pink: #e52e6a;
+  --vkui--color_background_accent: var(--my-pink);
+  --vkui--color_icon_accent: var(--my-blue);
+  --vkui_internal--outline: var(--my-pink);
+}
+
 .q-text {
-    font-weight: 700;
-    color: #2BB4D6;
+  font-size: 30px;
+  font-weight: 700;
+  color: #2bb4d6;
+  margin-bottom: 35px;
+  line-height: 1em;
+  text-align: center;
+}
+
+.option {
+  --vkui--font_text--font_size--regular: 20px;
+  --vkui--font_text--font_weight--regular: 500;
+}
+
+.continue {
+  margin-top: 20px;
+  background-color: white !important;
+  width: 43vw;
+  height: 44px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--my-blue);
+  border-radius: 10px;
+}
+
+.continue__text {
+  font-size: 17px;
+  color: var(--my-blue);
+}
+
+.q-slider {
+  margin-bottom: 25px;
+}
+
+.q-underbox {
+  width: 70vw;
+  height: 44px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--my-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
 }

@@ -14,6 +14,7 @@ export const QSmokeTypeExact: React.FC<QuestionProps> = ({
     <Div className="center">
       <Text className="q-text">Что именно?</Text>
       <Radio
+        className="option"
         checked={smokeType === "PODS"}
         onChange={() => {
           setType(smokeType === "PODS" ? null : "PODS");
@@ -22,6 +23,7 @@ export const QSmokeTypeExact: React.FC<QuestionProps> = ({
         поды
       </Radio>
       <Radio
+        className="option"
         checked={smokeType === "DISPOSABLE"}
         onChange={() => {
           setType(smokeType === "DISPOSABLE" ? null : "DISPOSABLE");
@@ -30,6 +32,8 @@ export const QSmokeTypeExact: React.FC<QuestionProps> = ({
         одноразовые
       </Radio>
       <Button
+        after={<Icon12ChevronRight color="#2BB4D6" />}
+        className="continue"
         onClick={() => {
           if (smokeType === "PODS") {
             setData({ ...data, smokeType: smokeType });
@@ -40,7 +44,7 @@ export const QSmokeTypeExact: React.FC<QuestionProps> = ({
           }
         }}
       >
-        Продолжить <Icon12ChevronRight />
+        <Text className="continue__text"> Продолжить</Text>
       </Button>
     </Div>
   );
