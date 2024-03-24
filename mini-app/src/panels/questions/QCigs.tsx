@@ -9,35 +9,24 @@ export const QCigs: React.FC<QuestionProps> = ({ data, setData, setPage }) => {
   return (
     <Div className="center">
       <Text className="q-text">Сколько сигарет тебе нужно в день?</Text>
-
       <Slider
+        className="q-slider"
         value={cigs}
         onChange={setCigs}
         max={30}
         min={0}
-        style={{
-          "--vkui--color_background_accent": "#E52E6A",
-          "--vkui_internal--outline": "2px solid #E52E6A",
-        }}
       />
-      <div
-        style={{
-          border: "1px solid #2BB4D6",
-          borderRadius: "10px",
-          height: "44px",
-          width: "260px",
-        }}
-      >
-        {cigs}
-      </div>
+      <div className="q-underbox">{cigs}</div>
 
       <Button
+        className="continue"
+        after={<Icon12ChevronRight color="#2BB4D6" />}
         onClick={() => {
           setData({ ...data, cigsPerDay: cigs });
           setPage("reason");
         }}
       >
-        Продолжить <Icon12ChevronRight />
+        <Text className="continue__text">Продолжить</Text>
       </Button>
     </Div>
   );

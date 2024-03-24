@@ -233,3 +233,156 @@ export const Kitten = () => {
     </div>
   );
 };
+
+export const BgWavesPink = (props: React.HTMLAttributes<HTMLDivElement>) => {
+  return (
+    <div {...props}>
+      <svg
+        width="337"
+        height="74"
+        viewBox="0 0 337 74"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M175.5 1C175.5 1 129.5 13.5 104.5 23.5C79.5 33.5 61.5 46 1 30V1H175.5Z"
+          fill="#E52E6A"
+          fill-opacity="0.5"
+          stroke="#E52E6A"
+          stroke-opacity="0.7"
+        />
+        <path
+          d="M1 40.5C53.5 69 105.5 56 123.5 48C141.5 40 197 18 238.5 18C280 18 312.5 13 336 1H1V40.5Z"
+          fill="#E52E6A"
+          fill-opacity="0.5"
+          stroke="#E52E6A"
+          stroke-opacity="0.7"
+        />
+        <path
+          d="M323.5 1C313.5 22.5 298.5 20.5 282 26C265.5 31.5 184.5 27.5 121.5 59C58.5 90.5 6 59 1 55L1 1H323.5Z"
+          fill="#E52E6A"
+          fill-opacity="0.5"
+          stroke="#E52E6A"
+          stroke-opacity="0.7"
+        />
+        <path
+          d="M1 49C51.5 56 63 50.5 88 40.5C113 30.5 143 17 179.5 14.5C216 12 242.5 10.1849 269 1H1V49Z"
+          fill="#E52E6A"
+          fill-opacity="0.5"
+          stroke="#E52E6A"
+          stroke-opacity="0.7"
+        />
+      </svg>
+    </div>
+  );
+};
+
+export const BgWavesBlue = (props: React.HTMLAttributes<HTMLDivElement>) => {
+  return (
+    <div {...props}>
+      <svg
+        width="330"
+        height="73"
+        viewBox="0 0 330 73"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M329.5 8.05442C307 1.0544 298 3.05435 268.5 14.5544C239 26.0545 252.5 27.5545 189.5 34.0544C126.5 40.5543 77.5 37.5543 44 72.0544H329.5V8.05442Z"
+          fill="#2BB4D6"
+          fill-opacity="0.5"
+          stroke="#2BB4D6"
+          stroke-opacity="0.6"
+        />
+        <path
+          d="M329.5 30.7027C291.053 10.7304 268.562 20.1766 243.604 30.6591L243.5 30.7027C218.5 41.2026 220 46.2027 167.5 46.2027C115 46.2027 65 54.7026 44 71.7027H329.5V30.7027Z"
+          fill="#2BB4D6"
+          fill-opacity="0.5"
+        />
+        <path
+          d="M243.5 30.7027C218.5 41.2026 220 46.2027 167.5 46.2027C115 46.2027 65 54.7026 44 71.7027H329.5V30.7027C291.053 10.7304 268.562 20.1766 243.604 30.6591M243.5 30.7027L243.604 30.6591M243.5 30.7027C243.535 30.6882 243.569 30.6736 243.604 30.6591"
+          stroke="#2BB4D6"
+          stroke-opacity="0.6"
+        />
+        <path
+          d="M329 30C277 55.5 277.5 53 228.5 53C179.5 53 126 71.5 126 71.5H329V30Z"
+          fill="#2BB4D6"
+          fill-opacity="0.5"
+          stroke="#2BB4D6"
+          stroke-opacity="0.6"
+        />
+        <path
+          d="M329.5 27.1979C324 10.6978 300.5 -12.302 230.5 10.6979C160.5 33.6977 182.5 27.6979 140 27.6979C97.5 27.6979 38 32.6979 2 72.1979H329.5V27.1979Z"
+          fill="#2BB4D6"
+          fill-opacity="0.5"
+          stroke="#2BB4D6"
+          stroke-opacity="0.6"
+        />
+      </svg>
+    </div>
+  );
+};
+
+export const Lungs = () => {
+  return (
+    <svg
+      width="93"
+      height="94"
+      viewBox="0 0 93 94"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g filter="url(#filter0_d_1012_3979)">
+        <path
+          d="M34.8463 20.0984C16.3208 33.1974 7.33873 66.4905 12.3919 75.2231L12.9527 75.7689C15.7595 79.5894 25.3026 79.0436 39.3366 76.3147C39.3366 76.3147 41.0207 17.9153 39.3366 17.9153C37.6525 17.9152 37.6525 19.0069 35.9685 19.5526C34.2844 20.0984 34.8463 20.0984 34.8463 20.0984Z"
+          fill="#E52E6A"
+        />
+        <path
+          d="M58.9876 20.1181C76.8652 33.335 85.5332 66.9281 80.6568 75.7394L80.1156 76.2901C77.4069 80.145 68.1975 79.5943 54.6543 76.8408C54.6543 76.8408 53.0291 17.9153 54.6543 17.9153C56.2795 17.9152 56.2795 19.0167 57.9046 19.5674C59.5298 20.1181 58.9876 20.1181 58.9876 20.1181Z"
+          fill="#E52E6A"
+        />
+        <path
+          d="M42.1439 7C43.2666 10.2747 43.2666 14.641 43.2666 18.4616C43.2666 22.2821 42.1439 24.4652 39.8984 27.1942V29.9231C42.1439 27.1942 43.828 25.5568 46.0734 25.5568C48.3188 25.5568 51.1256 26.6484 53.9324 29.9231V27.1942C52.3979 23.7839 50.6749 23.9195 50.0029 18.4616C49.331 13.0037 49.9066 13.1812 50.5643 7H42.1439Z"
+          fill="#E52E6A"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_1012_3979"
+          x="0.558823"
+          y="0.735293"
+          width="91.8824"
+          height="92.9264"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dy="4.17647" />
+          <feGaussianBlur stdDeviation="5.22059" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_1012_3979"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_1012_3979"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  );
+};

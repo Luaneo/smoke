@@ -16,6 +16,7 @@ export const QDisposablePrice: React.FC<QuestionProps> = ({
 
       <Input
         type="number"
+        placeholder="Введи цену"
         value={price}
         onInput={(e) => {
           setPrice(Number(e.currentTarget.value));
@@ -23,12 +24,14 @@ export const QDisposablePrice: React.FC<QuestionProps> = ({
       />
 
       <Button
+        className="continue"
+        after={<Icon12ChevronRight color="#2BB4D6" />}
         onClick={() => {
           setData({ ...data, disposablePrice: price });
           setPage("disposableCount");
         }}
       >
-        Продолжить <Icon12ChevronRight />
+        <Text className="continue__text">Продолжить</Text>
       </Button>
     </Div>
   );
